@@ -13,19 +13,19 @@
     <title>Document</title>
 </head>
 
-<body class="bg-black">
+<body class="bg-black animate__animated animate__fadeIn animate__delay-1s">
 
     <!-- component -->
     <section>
         <div class="bg-black text-white py-40">
             <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
                 <div class="flex flex-col w-full  justify-center items-start p-8">
-                    <h1 class="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose my-10">Netas</h1>
-                    <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2" id="pregunta">Un juego para conocernos</h2>
+                    <h1 class="text-4xl md:text-5xl p-2 text-yellow-300 tracking-loose my-10">Netas</h1>
+                    <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2 animate__animated animate__fadeIn animate__delay-2s" id="pregunta">Un juego para conocernos</h2>
                     <!-- <p class="text-sm md:text-base text-gray-50 mb-4">Explore your favourite events and
                         register now to showcase your talent and win exciting prizes.</p> -->
                     <button onclick="pregunta()"
-                        class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg my-8 py-2 px-4 border border-yellow-300 hover:border-transparent">
+                        class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg my-8 py-2 px-4 border border-yellow-300 hover:border-transparent animate__animated animate__fadeIn animate__delay-3s">
                         Preguntar</button>
                 </div>
            
@@ -102,7 +102,7 @@
             let nume = Math.floor(Math.random() * (0, 59));
 
 
-            document.getElementById("pregunta").innerHTML = netas[nume];
+            document.getElementById("pregunta").innerHTML = `<div class=" animate__animated animate__fadeIn animate__delay-2s">${netas[nume]}</div>`;
 
             console.log(netas[nume])
         }
