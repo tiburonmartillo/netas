@@ -5,108 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Netas</title>
 </head>
 
-<body class="bg-black animate__animated animate__fadeIn animate__delay-1s">
+<body class="bg-black animate__animated animate__fadeIn animate__delay-1s overflow-hidden">
 
     <!-- component -->
     <section>
-        <div class="bg-black text-white py-40">
+        <div class="bg-black text-white py-20">
             <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
                 <div class="flex flex-col w-full  justify-center items-start p-8">
                     <h1 class="text-4xl md:text-5xl p-2 text-yellow-300 tracking-loose my-10">Netas</h1>
-                    <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2 animate__animated animate__fadeIn animate__delay-2s" id="pregunta">Un juego para conocernos</h2>
+                    <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2 animate__animated animate__fadeIn animate__delay-2s"
+                        id="pregunta">Un juego para conocernos</h2>
                     <!-- <p class="text-sm md:text-base text-gray-50 mb-4">Explore your favourite events and
                         register now to showcase your talent and win exciting prizes.</p> -->
                     <button onclick="pregunta()"
-                        class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg my-8 py-2 px-4 border border-yellow-300 hover:border-transparent animate__animated animate__fadeIn animate__delay-3s">
+                        class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg my-16 py-2 px-4 border border-yellow-300 hover:border-transparent animate__animated animate__fadeIn animate__delay-3s ">
                         Preguntar</button>
                 </div>
-           
+
             </div>
         </div>
     </section>
     <script>
         let netas = [
-        "¿Qué cambiarías si pudieras modificar algo de tu pasado?",
-"Define lo que es para ti la belleza",
-"¿Cuál crees que ha sido tu mejor edad?",
-"Tres cosas que te parecen repugnantes",
-"Algo que harías de otro modo si tuvieras oportunidad",
-"De lo que está a la vista ¿qué te gustaría tener?",
-"Algo que no serías capaz de perdonar",
-"Una buena razón para seguir adelante",
-"¿Qué opinas de las bicicletas?",
-"¿A cuantas personas has besado en la boca?",
-"¿Cuánto crees vale una vida humana?",
-"Algún momento dichoso de tu niñez",
-"¿Crees que es inevitable el sufrimiento?",
-"¿Eliminarías a algún tipo de personas del mundo?",
-"¿Qué importa más, buena salud o buena imagen?",
-"¿A dónde quisieras ir de vacaciones?",
-"Describe a tu pareja ideal",
-"Un suceso que te gustaría volver a vivir",
-"¿Cómo te gustaría llamarte",
-"Algo que te parece absurdo",
-"¿Qué te gustaría cocinar?",
-"¿Cómo es la ropa interior que te gusta usar?",
-"Una manía o mala costumbre que tengas",
-"Tu objetivo principal en estos momentos",
-"¿Cuál es tu mayor tesoro?",
-"Algo que te hace llorar",
-"Una equivocación que hayas cometido",
-"¿Cuál es el principal problema de las personas?",
-"Menciona algo que te entusiasme",
-"¿Quienes son tus mejores amigos y amigas?",
-"¿De qué sirve estudiar una carrera?",
-"¿Cuál es tu opinion de la autoridad?",
-"¿Qué te gustaría que cambiara en el futuro?",
-"¿A quién te pareces?",
-"Lo que te causa más flojera",
-"¿En cuál época te gustaría vivir y por qué?",
-"¿Qué cosa te gustaría aprender?",
-"¿Qué es el amor?",
-"¿Cuál es tu comida favorita?",
-"¿Qué le dirías al presidente si te diera una cita?",
-"¿Te consideras una persona normal?",
-"Una fantasía que te gustaría realizar",
-"¿Qué te gusta de la naturaleza",
-"¿En qué colonia te gustaría vivir?",
-"Tu opinión del futbol",
-"¿Qué deporte practicas?",
-"Un olor que te fascine",
-"¿Qué tanto te comunicas con tus padres?",
-"Una razón para emborracharte o para no hacerlo",
-"¿Qué harías con un millón?",
-"¿Menciona algo que te de mucho placer?",
-"¿Qué significa ser responsable",
-"¿Cuántas mentiras has dicho este día?",
-"La manera en que te gusta dormir",
-"Algo que te deprima o te cause tristeza",
-"Tus videojuegos o series favoritas",
-"¿En que parte de tu cuerpo sientes más cosquillas",
-"¿Cómo mejorar la vida en la ciudad?",
-"¿Con quién te gustaría vivir?",
-"¿Te consideras bueno o buena?"
-
+            "¿Qué cambiarías si pudieras modificar algo de tu pasado?",
+            "Define lo que es para ti la belleza",
+            "¿Cuál crees que ha sido tu mejor edad?",
+            "Tres cosas que te parecen repugnantes",
+            "Algo que harías de otro modo si tuvieras oportunidad",
+            "De lo que está a la vista ¿qué te gustaría tener?",
+            "Algo que no serías capaz de perdonar",
+            "Una buena razón para seguir adelante",
+            "¿Qué opinas de las bicicletas?",
+            "¿A cuantas personas has besado en la boca?",
+            "¿Cuánto crees vale una vida humana?",
+            "Algún momento dichoso de tu niñez",
+            "¿Crees que es inevitable el sufrimiento?",
+            "¿Eliminarías a algún tipo de personas del mundo?",
+            "¿Qué importa más, buena salud o buena imagen?",
+            "¿A dónde quisieras ir de vacaciones?",
+            "Describe a tu pareja ideal",
+            "Un suceso que te gustaría volver a vivir",
+            "¿Cómo te gustaría llamarte",
+            "Algo que te parece absurdo",
+            "¿Qué te gustaría cocinar?",
+            "¿Cómo es la ropa interior que te gusta usar?",
+            "Una manía o mala costumbre que tengas",
+            "Tu objetivo principal en estos momentos",
+            "¿Cuál es tu mayor tesoro?",
+            "Algo que te hace llorar",
+            "Una equivocación que hayas cometido",
+            "¿Cuál es el principal problema de las personas?",
+            "Menciona algo que te entusiasme",
+            "¿Quiénes son tus mejores amigos y amigas?",
+            "¿De qué sirve estudiar una carrera?",
+            "¿Cuál es tu opinion de la autoridad?",
+            "¿Qué te gustaría que cambiara en el futuro?",
+            "¿A quién te pareces?",
+            "Lo que te causa más flojera",
+            "¿En cuál época te gustaría vivir y por qué?",
+            "¿Qué cosa te gustaría aprender?",
+            "¿Qué es el amor?",
+            "¿Cuál es tu comida favorita?",
+            "¿Qué le dirías al presidente si te diera una cita?",
+            "¿Te consideras una persona normal?",
+            "Una fantasía que te gustaría realizar",
+            "¿Qué te gusta de la naturaleza?",
+            "¿En qué colonia te gustaría vivir?",
+            "Tu opinión del futbol",
+            "¿Qué deporte practicas?",
+            "Un olor que te fascine",
+            "¿Qué tanto te comunicas con tus padres?",
+            "Una razón para emborracharte o para no hacerlo",
+            "¿Qué harías con un millón?",
+            "¿Menciona algo que te de mucho placer?",
+            "¿Qué significa ser responsable",
+            "¿Cuántas mentiras has dicho este día?",
+            "La manera en que te gusta dormir",
+            "Algo que te deprima o te cause tristeza",
+            "Tus videojuegos o series favoritas",
+            "¿En que parte de tu cuerpo sientes más cosquillas",
+            "¿Cómo mejorar la vida en la ciudad?",
+            "¿Con quién te gustaría vivir?",
+            "¿Te consideras bueno o buena?",
+            "Si pudieras elegir a cualquier persona en el mundo, ¿a quién invitarías a cenar?",
+            "¿Te gustaría ser famoso? ¿De qué forma?",
+            "Antes de hacer una llamada por teléfono, ¿ensayas lo que vas a decir? ¿Por qué?",
+            "Para ti, ¿cómo sería un día perfecto?",
+            "¿Cuándo fue la última vez que cantaste a solas? ¿Y para otra persona?",
+            "Si pudieras vivir hasta los 90 años y tener el cuerpo o la mente de alguien de 30 durante los últimos 60 años de tu vida, ¿cuál de las dos opciones elegirías?",
+            "¿Tienes una 'corazonada' secreta acerca de cómo vas a morir?",
+            "Di tres cosas que creas tener en común conmigo",
+            "¿Por qué aspecto de tu vida te sientes más agradecido?",
+            "Si pudieras cambiar algo en cómo te educaron, ¿qué sería?",
+            "Tómate cuatro minutos para contarme la historia de tu vida con todo el detalle posible",
+            "Si mañana te pudieras levantar disfrutando de una habilidad o cualidad nueva, ¿cuál sería?",
+            "Si una bola de cristal te pudiera decir la verdad sobre ti mismo, tu vida, el futuro, o cualquier otra cosa, ¿qué le preguntarías?",
+            "¿Hay algo que hayas deseado hacer desde hace mucho tiempo? ¿Por qué no lo has hecho todavía?",
+            "¿Cuál es el mayor logro que has conseguido en tu vida?",
+            "¿Qué es lo que más valoras en un amigo?",
+            "¿Cuál es tu recuerdo más valioso?",
+            "¿Cuál es tu recuerdo más doloroso?",
+            "Si supieras que en un año vas a morir de manera repentina, ¿cambiarías algo en tu manera de vivir? ¿Por qué?",
+            "¿Qué significa la amistad para ti?",
+            "¿Qué importancia tiene el amor y el afecto en tu vida?",
+            "Comparte de forma alterna cinco características que consideras positivas de mi",
+            "¿Tu familia es cercana y cariñosa? ¿Crees que tu infancia fue más feliz que la de los demás?",
+            "¿Cómo te sientes respecto a tu relación con tu madre?",
+            "Di tres frases usando el pronombre -nosotros-. Por ejemplo, -nosotros estamos en esta habitación sintiendo…-",
+            "Completa esta frase: -Ojalá tuviera alguien con quien compartir…-.",
+            "Si te fueras a convertir en mi amigo(a) íntimo, comparte algo que sería importante que supiera",
+            "Dime qué es lo que más te ha gustado de mí. Sé muy honesto y dile cosas que no dirías a alguien a quien acabas de conocer",
+            "Comparte un momento embarazoso de tu vida",
+            "¿Cuándo fue la última vez que lloraste delante de alguien? ¿Y a solas?",
+            "Cuénta algo que ya te guste de mí",
+            "¿Hay algo que te parezca demasiado serio como para hacer broma al respecto?",
+            "Si fueras a morir esta noche sin posibilidad de hablar con nadie, ¿qué lamentarías no haber dicho a alguien? ¿Por qué no se lo has dicho hasta ahora?",
+            "Tu casa se incendia con todas tus posesiones dentro. Después de salvar a tus seres queridos y a tus mascotas, tienes tiempo para hacer una última incursión y salvar un solo objeto. ¿Cuál escogerías? ¿Por qué?",
+            "De todas las personas que forman tu familia, ¿qué muerte te parecería más dolorosa? ¿Por qué?",
+            "Comparte un problema personal y pídele a tu interlocutor que te cuente cómo habría actuado él o ella para solucionarlo. Pregúntale también cómo cree que te sientes respecto al problema que has contado"
         ]
 
         function pregunta() {
 
-            let nume = Math.floor(Math.random() * (0, 59));
-
+            let nume = Math.floor(Math.random() * (0, netas.length));
 
             document.getElementById("pregunta").innerHTML = `<div class=" animate__animated animate__fadeIn animate__delay-2s">${netas[nume]}</div>`;
 
             console.log(netas[nume])
         }
-        
+
 
     </script>
 </body>
