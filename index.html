@@ -23,14 +23,21 @@
                         id="pregunta">Un juego para conocernos</h2>
                     <!-- <p class="text-sm md:text-base text-gray-50 mb-4">Explore your favourite events and
                         register now to showcase your talent and win exciting prizes.</p> -->
-                    <button onclick="pregunta()"
+                    <div class="row">
+
+                        <button onclick="pregunta()"
                         class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg my-16 py-2 px-4 border border-yellow-300 hover:border-transparent animate__animated animate__fadeIn animate__delay-3s ">
                         Preguntar</button>
+                        <button onclick="insexo()"
+                        class="bg-transparent hover:bg-red-600 text-red-600 hover:text-black rounded shadow hover:shadow-lg ml-8 py-2 px-4 border border-red-500 hover:border-transparent animate__animated animate__fadeIn animate__delay-5s ">
+                        Preguntar 😈</button>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
+
     <script>
         let netas = [
             "¿Qué cambiarías si pudieras modificar algo de tu pasado?",
@@ -140,6 +147,158 @@
             console.log(netas[nume])
         }
 
+        let preguntas = [
+    "¿Cuándo despertaste al sexo?",
+    "¿Crees en la fidelidad?",
+    "¿Cuál es tu posición favorita?",
+    "¿Alguna vez cachaste a tus papás haciéndolo?",
+    "¿Sientes qué has sido usado como objeto sexual?",
+    "¿Disfrutas más el agasajo previo qué el sexo?",
+    "¿Qué tanto te excita la pornografía?",
+    "¿Cuál es el tipo de ropa qué te prende?",
+    "¿Tiene menos de 24 horas de qué lo hiciste?",
+    "Cuenta un sueño erótico qué hayas tenido",
+    "Lo qué más te atrae del cuerpo de otra persona",
+    "¿Con qué frecuencia piensas en sexo?",
+    "¿Te da pena qué alguien mira tus partes íntimas?",
+    "Cuenta tu mejor fantasía sexual",
+    "¿Crees qué sea malo masturbarse?",
+    "Menciona algo qué te parezca imperdonable a la hora de hacer el amor",
+    "Menciona tres cosas qué te existen",
+    "Representa un beso cachondo",
+    "Haz un baile sexy",
+    "Haz un sonido de un acto sexual",
+    "Quitate una prenda de vestir",
+    "Haz tu mejor cara de orgasmo",
+    "¿Se siente más o se siente menos usando condón?",
+    "¿Cuando puede considerarse una eyaculación como precoz?",
+    "¿Es mejor el sexo con amor o sin él?",
+    "Menciona tres obstáculos para tener buen sexo",
+    "Menciona cinco maneras de llamarle al acto sexual",
+    "¿Es viable una pareja qué no tenga relaciones sexuales?",
+    "Describe el órgano sexual opuesto al tuyo de manera poética",
+    "¿Hasta qué edad crees qué es posible tener buen sexo?",
+    "10 maneras de nombrar los órganos sexuales",
+    "¿Qué entiendes por perversión sexual?",
+    "¿Qué tanto dificultan los prejuicios el desenvolvimiento de tu sexualidad?",
+    "¿Cuál es tu concepto de una buena amante", 
+    "Describe cómo es tu órgano sexual",
+    "¿Qué diferencia hay entre un orgasmo onanista y uno compartido?",
+    "¿Te gusta desvestirte o qué te desvistan?",
+    "¿Cuantos orgasmos seguidos crees qué pueda tener una mujer?",
+    "¿Consideras qué el sexo es malo o pecaminoso?",
+    "¿Qué prefieres tamaño, movimiento, duración, o rigidez?",
+    "Del uno al 10 califica tu nivel actual de satisfacción sexual",
+    "Describe tu beso favorito",
+    "¿Cuánto tiempo crees qué deba durar un coito?",
+    "¿Crees qué se deba a llegar virgen al matrimonio?",
+    "¿Te gusta gritar o qué tu pareja grita en el acto?",
+    "Menciona algo qué te enfría y que hace que pierdas el deseo",
+    "¿Prefieres hacerlo con luz o a oscuras?",
+    "¿Te han sorprendido o has sorprendido a alguien siendo infiel?",
+    "¿Qué es lo menos sexy qué te han dicho en la cama?",
+    "Cuentame una experiencia chusca qué te haya pasado haciéndolo",
+    "¿Has usado el sexo como instrumento para lograr tus objetivos?",
+    "¿Te has masturbado en el metro?",
+    "¿Lo has hecho con ojos vendados?",
+    "¿Has tenido una fantasía sexual con la mamá o papá de un amigo?",
+    "¿Tienes más de un año de no hacerlo",
+    "¿Lo haz hecho en una azotea?",
+    "¿Has practicado menage a trois?",
+    "¿Lo has hecho en la cama de tus papás?",
+    "¿Te has masturbado en un centro comercial?",
+    "¿Te has masturbado con una fruta o verdura?",
+    "¿Lo has hecho en tu escuela?",
+    "¿Lo has hecho con alguien mucho mayor qué tú?",
+    "¿Cuál es el peor lugar en el qué lo has hecho?",
+    "¿Has tenido una fantasía sexual con alguien de tu trabajo?",
+    "¿Te has masturbado con un calcetín?",
+    "¿Lo harías por dinero?",
+    "¿Lo has hecho en un hospital?",
+    "¿Lo has hecho con alguien de tu mismo sexo?",
+    "¿Lo has hecho con alguien casado?",
+    "¿Lo has hecho en el cine?",
+    "¿Has participado en una orgía?",
+    "¿Lo has hecho con tu jefe?",
+    "¿Lo has hecho de a perrito?",
+    "¿Has practicado sexo swinger?",
+    "¿Lo has hecho con más de 20 personas?",
+    "¿Lo has hecho en una cueva?",
+    "¿Lo haces por no tener algo mejor qué hacer?",
+    "¿Lo has hecho en un baño público?",
+    "¿Lo has hecho siempre con la misma persona?",
+    "¿Has hecho el amor solo con la mirada?",
+    "¿Lo has hecho en la calle?",
+    "¿Lo has hecho con dos o más personas el mismo día?",
+    "¿Haz fingido un orgasmo?",
+    "¿Lo harías con alguien aquí presente?",
+    "¿Lo has hecho recitando un poema?",
+    "¿Haz corrido un gran riesgo al hacerlo con alguien?",
+    "¿Sientes culpa cuando haces el amor?",
+    "¿Tienes miedo de no satisfacer a tu pareja?",
+    "¿Te ha ganado la risa haciéndolo?",
+    "¿Te has masturbado con un bistec?",
+    "¿Lo has hecho por lástima?",
+    "¿Has pagado por sexo?",
+    "¿Has practicado sexo virtual?",
+    "¿Te has masturbado espiando a un vecino?",
+    "¿Has tenido una fantasía sexual con un artista?",
+    "¿Lo has hecho entre pétalos de rosas?",
+    "¿Te has masturbado con un árbol?",
+    "¿Te has acalambrado durante el acto?",
+    "¿Lo has hecho borracho o drogado?",
+    "¿Lo has hecho en un parqué?",
+    "¿Lo has hecho con una pariente cercana?",
+    "¿Te has quédado dormido haciéndolo?",
+    "¿Lo has hecho sin quérer hacerlo?",
+    "¿Te has masturbado con un queso Oaxaca?",
+    "¿Lo has hecho con la novia de tu mejor amigo?",
+    "¿Has tenido una fantasía sexual con drácula?",
+    "¿Has tenido una fantasía sexual con un policía?",
+    "¿Lo has hecho en una fiesta?",
+    "¿Lo has hecho sin pensar en las consecuencias?",
+    "¿Has llorado de placer?",
+    "¿Lo has hecho amarrado?",
+    "¿Lo has hecho con alguien mucho menor qué tú?",
+    "¿Lo has hecho en la cocina?",
+    "¿Te has masturbado con un vibrador?",
+    "¿Lo has hecho con tu mejor amigo?",
+    "¿Lo has hecho comiendo?",
+    "¿Lo has hecho con alguien desconocido?",
+    "¿Lo has hecho en más de dos moteles?",
+    "¿Te han hecho sexo oral?",
+    "¿Lo has hecho disfrazado?",
+    "¿Lo has hecho debajo de la mesa?",
+    "¿Te has masturbado pensando en una maestra?",
+    "¿Te has masturbado pensando en una barbie?",
+    "¿Has practicado la posición del misionero?",
+    "¿Lo has hecho en un autobús de pasajeros?",
+    "¿Lo has hecho en el clóset?",
+    "¿Lo has hecho bajo la lluvia?",
+    "¿Has hecho el 69?",
+    "¿Te has masturbado con un peluche?",
+    "¿Has tenido una fantasía sexual con un taxista?",
+    "¿Lo has hecho en una iglesia?",
+    "¿Has tenido una fantasía sexual con los pitufos?",
+    "¿Has practicado posiciones del kamasutra?",
+    "¿Te has masturbado con una almohada?",
+    "¿Lo has hecho de a trenecito?",
+    "¿Has tenido una fantasía sexual con una geisha?",
+    "¿Lo has hecho con un ángel?",
+    "¿Lo has hecho cómo gato salvaje?",
+    "¿Lo has hecho en la playa?",
+    "¿Lo has hecho en un auto?",
+    "¿Lo has hecho disfrazado de luchador?",
+    "¿Cómo le pedirías a alguien qué hiciera el amor contigo?"]
+
+function insexo() {
+
+    let nume = Math.floor(Math.random() * (0, preguntas.length));
+
+    document.getElementById("pregunta").innerHTML = `<div class=" animate__animated animate__fadeIn animate__delay-2s">${preguntas[nume]}</div>`;
+
+    console.log(preguntas[nume])
+}
 
     </script>
 </body>
