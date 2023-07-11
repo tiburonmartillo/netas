@@ -12,7 +12,23 @@
 </head>
 
 <body class="bg-black animate__animated animate__fadeIn animate__delay-1s h-100">
-
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        wave: {
+                            '0%': { transform: 'rotate(0.0deg)' },
+                            '100%': { transform: 'rotate(360.0deg)' },
+                        },
+                    },
+                    animation: {
+                        'waving-hand': 'wave 20s linear infinite',
+                    },
+                },
+            }
+        }
+    </script>
     <!-- component -->
 
     <div class="bg-indigo-900 relative overflow-hidden h-screen">
@@ -22,18 +38,18 @@
         </div>
         <header class="absolute top-0 left-0 right-0 z-20">
             <nav class="container mx-auto px-6 md:px-12 py-4">
-                <div class="flex justify-center items-center">
+                <div class="justify-center">
                     <div class="flex items-center">
-                        <a href="https://oregano.studio"
-                            class="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
-                            Orégano Studio
+                        <a class="flex-auto w-32" href="https://oregano.studio">
+                            <img class="animate-waving-hand" width="100"
+                                src="https://oregano.studio/tailwindcss/assets/logo%20oregano.svg" alt="">
                         </a>
                         <a href="insexo.html"
-                            class="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                            class="md:text-lg text-sm uppercase mx-3 cursor-pointer text-white  hover:text-gray-300 flex-auto">
                             Insexo
                         </a>
                         <a href="index.html"
-                            class="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                            class="md:text-lg text-sm uppercase mx-3 cursor-pointer  text-white hover:text-gray-300 flex-auto">
                             Netas
                         </a>
                     </div>
